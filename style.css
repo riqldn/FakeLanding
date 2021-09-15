@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+    animation: appear;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+@font-face {
+    font-family: logo;
+    src: url('./Neon.ttf');
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.jumbotron{
+  background:url('./j4.jpg');
+  width: 100%;
+  height: 500px;
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding: 30px;
+}
+.jumbotronImg{
+    height: auto;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    display: flex;
+    font-size: 1.2rem;
+    justify-content:space-between;
+    font-family: roboto;
+    font-weight: lighter;
+    padding: 0 20px;
+}
+.menu-item{
+    display: inline;
+    margin: 0 25px;
+}
+.menu-link:hover{
+    color: skyblue;
+    transform: scale(2);
+
+    
+}
+.logo{
+    margin: 16px 16px;
+    text-shadow: 1px 1px 1px black;
+    align-self: center;
+    font-size: 1.8rem;
+    color: skyblue;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(219, 219, 219);
+    font-size: 1.3rem;
+    margin: 0 ;
+    height: 50px;
+    color: white;
+    font-family: logo;
+    text-shadow: 1px 1px 5px black;
+}
+.text1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.btn{
+
+    background: linear-gradient(rgb(68, 68, 68), black);
+    color: white;
+    height: 45px;
+    font-size: 1.3rem;
+    padding:10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 90px;
+    margin:10px 20px;
+}
+.heading{
+    font-family:'roboto';
+    font-weight: bolder;
+    font-size: 3.5rem;
+    text-align: center;
+    
+}
+.productContainer{
+    display: flex;
+    font-family:sans-serif;
+    font-weight: lighter;
+}
+.productImg{
+    height: 420px;
+    width: 380px;
+    margin: 0 auto;
+}
+.productCard{
+    
+    width: 380px;
+    height: 500px;
+    cursor: pointer;
+}
+.productCard:nth-child(2){
+    margin: 0 auto;
+}
+.productCard:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function:ease-in-out;
+}
+
+.productPrice{
+    text-align: center;
+}
+.productCatergory{
+color: grey;
+margin: 3px 0;
+}
+.productPriceMobile{
+    display: none;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+}
+.headingSmall{
+    font-family: 'roboto';
+    font-weight: 900;
+    font-size: 2.5rem;
+    
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+.headerJoinUs{
+    font-size: 3rem;
+    color: white;
+    font-family: roboto;
+    text-shadow: 3px 3px 7px black;
+    position: relative;
+    top:50%;
+    left:30px;
+}
+.btnJoinUs{
+    position: relative;
+    top: 50%;
+    left: 194px;
+    background: linear-gradient(rgb(68, 68, 68), black);
+    color: white;
+    height: 45px;
+    font-size: 1.3rem;
+    padding:10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 90px;
+    margin:10px 20px;
+}
+.btnJoinUs:hover{
+   opacity: 0.75;
+    transition: ease-in-out;
+    
+    transition-property: all;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.2);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    transition-property: all;
+    cursor: pointer;
+}
+.image{
+    height: 500px;
+    width: 420px;
+    margin: 4px;
+}
+.imageContainer{
+    display: flex;
+}
+#men{
+    background:url(./male.png);
+    background-position:top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#women{
+    background:url(./woman.jpg);
+    background-position:top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#kids{
+    background:url(./kid.jpg);
+    background-position:top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.btn3:hover{
+    opacity: 0.75;
+    transition: ease-in-out;
+    color: black;
+    transition-property: all;
+    cursor: pointer;
+}
+.btn3{
+    background: linear-gradient(rgb(212, 212, 212), rgb(148, 148, 148));
+    color: white;
+    height: 45px;
+    font-size: 1.3rem;
+    padding:10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 140px;
+    position: relative;
+    left: 166px;
+    top:420px;
+}
+#lastDiv{
+    margin-bottom: 80px;
+}
+footer{
+    background: black;
+    height: 50vh;
+    padding: 30px;
+    
+}
+.columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.column{
+    list-style: none;
+}
+.footItem{
+    margin: 15px;
+}
+i{
+    color: rgb(255, 255, 255,0.5);
+    font-size: 2rem;
+    margin: 0 5px;
+}
+#row1{
+    text-transform:uppercase;
+    font-family: roboto;
+   
+}
+#row2{
+    color:rgba(255, 255, 255,0.1);
+}
+.paymentMethods{
+    width: 85%;
+    margin: 0 53px;
+}
+.footLink{
+    text-decoration: none;
+    color: white;
+    font-family: roboto;
+}
+.footLink1{
+    color: rgb(255, 255, 255,0.3);
+}
+#row4{
+    display: flex;
+}
+hr{
+    border: 0.1px solid rgb(153, 153, 153,0.1);
+}
+.banner{
+    overflow-x: hidden;
+}
+.bannerTxt{
+    position: relative;
+    left: 900px;
+    animation: slide 12s infinite ease;
+  
+}
+@keyframes slide {
+    from{
+        left: 1000px;
+    }
+    to{
+        left:-1200px;
+    }
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
+@media screen and (max-width:1024px){
+    .menu.active{
+        display: grid;
+        grid-template-columns: auto;
+        position: absolute;
+        top: 40px;
+        text-align: center;
+        background: white;
+        left:calc(100% - 200px);
+        padding-left:0;
+        width: 200px;
+        z-index: 100;
+        transition: all ease-in-out 1s;
+        opacity: 1;
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: auto;
+        position: absolute;
+        top:40px;
+        text-align: center;
+        background: white;
+        left:calc(100% - 200px);
+        padding-left:0;
+        width: 200px;
+        z-index: -10;
+        transition: all ease-in-out 1s;
+        opacity: 0;
+    }
+    .columns{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .jumbotron{
+        height: 300px;
+        background-position:center;
+    }
+    footer{
+        font-size: 0.6rem;
+        height: 55vh;
+        padding: 0;
+    }
+    .headingSmall{
+        text-align: center;
+        margin-top: 80px;
+    }
+    nav{
+        z-index: 1;
+
+        background: white;
+    }
+    #row4{
+        font-size: 0.3px;
+    }
+    .bar{
+        height: 3px;
+        width: 25px;
+        background: black;
+        display: block;
+        margin: 5px;
+        
+    }
+   
+    .menu-toggle{
+        align-self: center;
+        margin: 0 16px;
+    }
+    .bar.active:nth-child(1){
+        transform: rotate(45deg)translateY(6px);
+        transition: all ease-in-out 1s;
+    }
+    .bar.active:nth-child(2){
+        display: none;
+    }
+    .bar.active:last-child{
+        transform: rotate(-45deg)translateY(-6px);
+        transition: all ease-in-out 1s;
+    }
+    .menu-item{
+        margin: 20px auto;
+        text-align: center;
+    }
+    .banner{
+        font-size: 0.8rem;
+        height: 70px;
+    }
+    .productContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .productPrice{
+        display: none;
+        
+    }
+    .productCard{
+        margin-bottom: 20px;
+    }
+    .productCard:nth-child(2){
+        margin-bottom: 20px;
+    }
+    .productPriceMobile{
+        display: block;
+        margin-top: 20px;
+    }
+    .headerJoinUs{
+        font-size: 2rem;
+        color: white;
+        font-family: roboto;
+        text-shadow: 3px 3px 7px black;
+        position: relative;
+        top:45%;
+        left:30px;
+    }
+    .btnJoinUs{
+        left: 108px;
+    }
+    .imageContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .image{
+        height: 400px;
+        width: 350px;
+    }
+    .btn3{
+        left:140px;
+        top:337px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .banner{
+        font-size: 0.7rem;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .headingSmall{
+        font-size: 1.8rem;
+        margin-top: 80px;
+        text-align: center;
+    }
+    .text1{
+        font-size: 0.8rem;
+    }
+    .btn{
+        font-size: 0.8rem;
+        height: 30px;
+        width: 70px;
+        vertical-align: middle;
+    }
+    .productImg{
+        height: 380px;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .productPrice{
+        display: none;
+    }
+    .productPriceMobile{
+        margin-top: 14px ;
+        display: block;
+    }
+    .productCard:nth-child(2){
+        margin: 30px 0;
+    }
+    .productCard{
+        
+        width: 300px;
+        height: 470px;
+        margin: 30px 0;
+        
+    }
+    .headerJoinUs{
+        font-size: 1.4rem;
+        text-align: center;
+        left: 0;
+    }
+    .btnJoinUs{
+        left: 109px;
+        height: 35px;
+        font-size: 0.8rem;
+        text-align: center;
+      
+        width: 70px;
+   
+    }
+    .image{
+        height: 350px;
+        width: 300px;
+    }
+    .btn3{
+        left:112px;
+        top:298px;
+    }
+    .columns{
+        grid-template-columns: auto;
+        width: 90%;
+    }
+    footer{
+        height: 106vh;
+    }
+}
+@media screen and (max-width:376px) {
+    .btnJoinUs{
+        left: 83px;
+    }
+    #row4{
+        font-size: 0.1rem;
+    }
+}
+@media screen and (max-width:321px) {
+    .btnJoinUs{
+        left: 70px;
+    }
+    .column{
+        padding-left: 20px;
+    }
+    .paymentMethods{
+        margin: 0 0 0 36px;
+    }
+}
